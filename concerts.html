@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Контакты</title>
+</head>
+<body>
+    <!-- Svg sprite -->
+    <svg style="display: none;">
+        <symbol id="vk" viewBox="0 0 36 36">
+            <g>
+                <circle cx="18" cy="18" r="18" fill="#13131A"/>
+                <path transform="translate(5.3 6.75) scale(0.042)" d="M545 144.2c3.4-11.4 0-19.8-16.3-19.8h-53.9c-13.7 0-20 7.2-23.4 15.2 0 0-27.4 66.7-66.3 109.9-12.6 12.5-18.3 16.5-25.1 16.5-3.4 0-8.4-4-8.4-15.4V144.2c0-13.7-4-19.8-15.4-19.8h-84.7c-8.6 0-13.7 6.4-13.7 12.4 0 13 19.5 16 21.5 52.6v79.5c0 17.4-3.1 20.6-9.9 20.6-18.3 0-62.7-67-89.1-143.6C161.1 133 155.9 124 142.1 124H88.2c-15.4 0-18.5 7.2-18.5 15.2 0 14.3 18.3 85.3 85.4 179.2 44.7 64 107.7 98.7 165.1 98.7 34.4 0 38.7-7.7 38.7-21v-48.4c0-15.4 3.2-18.5 14-18.5 7.9 0 21.6 4 53.4 34.7 36.4 36.4 42.4 52.8 62.9 52.8h53.9c15.4 0 23.1-7.7 18.7-22.9-4.8-15.2-22.4-37.2-45.7-63.3-12.6-14.9-31.5-30.9-37.3-38.7-7.9-10.2-5.6-14.7 0-23.8.1-.1 65.6-92.5 72.4-123.8z"/>
+            </g>
+        </symbol>
+
+        <symbol id="tg" viewBox="0 0 36 36">
+            <g>
+                <circle cx="18" cy="18" r="18" fill="#13131A"/>
+                <path transform="translate(6.3 6.13) scale(0.0476)" d="M477.2 75.4L405 423.1c-5.4 24-19.5 30-39.4 18.7l-109-80.2-52.6 50.6c-5.8 5.8-10.7 10.7-22 10.7l7.8-111.6L366.1 181c9.6-8.6-2.1-13.3-14.9-4.7L122.3 319.9 15 288c-22.6-7-23-22.3 4.8-33l440.8-170c18.9-6.8 35.4 4.6 16.6 40.4z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html">Copystyler</a>
+
+                <nav class="nav">
+                    <a class="nav__link hover-line" href="music.html">Музыка</a>
+                    <a class="nav__link hover-line" href="index.html#actor">Об артисте</a>
+                    <a class="nav__link hover-line active" href="concerts.html">Концерты</a>
+                    <a class="nav__link hover-line" href="contacts.html">Контакты</a>
+                </nav>
+
+                <div class="contact">
+                    <a class="contact__link" href="https://vk.ru/id536688922" target="_blank">
+                        <svg class="contact__img">
+                            <use href="#vk"></use>
+                        </svg>
+                    </a>
+                    <a class="contact__link" href="https://t.me/copy_styler" target="_blank">
+                        <svg class="contact__img">
+                            <use href="#tg"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <button class="burger" id="burger">
+                    <span class="burger__line">1</span>
+                    <span class="burger__line">2</span>
+                    <span class="burger__line">3</span>
+                    <span class="burger__line">4</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Concerts -->
+    <div class="concerts">
+        <div class="container">
+            <div class="concerts__inner">
+                <h1 class="page__title">Концерты</h1>
+                <div class="page__subtitle">Живые выступления и события</div>
+
+                <div class="concerts__block">
+                    <img src="assets/img/calendar.svg" alt="">
+                    <div class="concerts__center">
+                        <h3 class="concerts__title">Нет запланированных концертов</h3>
+                        <div class="concerts__text">Пока нет запланированных выступлений. Следи за новостями в соцсетях - анонсы появляются там первыми.</div>
+                        <div class="concerts__wrap">
+                            <a class="concerts__link" href="https://vk.ru/id536688922" target="_blank">
+                                <svg class="concerts__img">
+                                    <use href="#vk"></use>
+                                </svg>
+                                <span>Вконтакте</span>
+                            </a>
+
+                            <a class="concerts__link" href="https://t.me/copy_styler" target="_blank">
+                                <svg class="concerts__img">
+                                    <use href="#tg"></use>
+                                </svg>
+                                <span>Телеграм</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__item">
+                    <a class="footer__logo" href="index.html">Copystyler</a>
+                    <div class="footer__text">Электронный музыкант. Три альбома. Одна вселенная.</div>
+                </div>
+                <div class="footer__item footer__item--nav">
+                    <div class="footer__val">Навигация</div>
+                    <div class="footer__nav">
+                        <a class="footer__link" href="music.html">Музыка</a>
+                        <a class="footer__link" href="index.html#actor">Об артисте</a>
+                        <a class="footer__link" href="concerts.html">Концерты</a>
+                        <a class="footer__link" href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+                <div class="footer__item footer__item--social">
+                    <div class="footer__val">Соцсети</div>
+                    <div class="footer__social">
+                        <a class="footer__icon" href="https://vk.ru/id536688922" target="_blank">
+                            <svg class="footer__img">
+                                <use href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a class="footer__icon" href="https://t.me/copy_styler" target="_blank">
+                            <svg class="footer__img">
+                                <use href="#tg"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="footer__bottom">
+                <div class="footer__copyright">© 2026 Copystyler. Все права защищены.</div>
+                <a class="footer__production" href="https://vk.ru/promise2505" target="_blank">Разработка сайта Oskar</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
